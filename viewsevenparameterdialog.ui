@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewSevenParameterDialog</class>
+ <widget class="QDialog" name="ViewSevenParameterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>七参数计算</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>351</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>七参数</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>331</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>计算方法</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>坐标系统</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>中央子午线</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>东偏移</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>北偏移</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>DX(米)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>DY(米)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>DZ(米)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>RX(秒)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>RY(秒)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>RZ(秒)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>PPM</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>值</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButton_Caculate">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>75</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>计算参数</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Save">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>75</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>保存参数</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Input">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>75</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>导入参数</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Apply">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>71</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>应用参数</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

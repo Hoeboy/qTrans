@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogChangeAngle</class>
+ <widget class="QDialog" name="DialogChangeAngle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>角度单位转换</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_32">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>471</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>转换设置</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_48">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>21</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_64">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_65">
+       <item>
+        <widget class="QLabel" name="label_63">
+         <property name="text">
+          <string>源角度单位：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_AngleTran_Source">
+         <item>
+          <property name="text">
+           <string>十进制度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>度分秒</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>弧度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>百分度</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_66">
+       <item>
+        <widget class="QLabel" name="label_64">
+         <property name="text">
+          <string>目标角度单位：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_AngleTran_Target">
+         <item>
+          <property name="text">
+           <string>度分秒</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>弧度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>百分度</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_33">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>471</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>批量转换</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_50">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>451</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_68">
+     <item>
+      <widget class="QPushButton" name="pushButton_Another_AngleTran_SelectFile">
+       <property name="text">
+        <string>选择文件</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_AngleTran_FileName">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AngleTran_File">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>转换</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_69">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>549</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>原始文件数据排列顺序不限，选择需要转换的列即可。</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>451</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_70">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>221</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数据预览如下，请选择需要转换的列：</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_34">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>471</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>单点转换</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_47">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>451</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_63">
+     <item>
+      <widget class="QLabel" name="label_65">
+       <property name="text">
+        <string>源角度：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_AngleTran_Soruce"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_AngleTran_Point">
+       <property name="text">
+        <string>转换</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_66">
+       <property name="text">
+        <string>目标角度：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_AngleTran_Target">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

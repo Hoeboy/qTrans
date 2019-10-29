@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>地理信息工具箱</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>坐标计算</string>
+    </property>
+    <addaction name="action_coordinatedirectsolution"/>
+    <addaction name="action_coordinateinversionsolution"/>
+    <addaction name="action_changezone"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="action_changeangle"/>
+    <addaction name="action_coordinatetokml"/>
+    <addaction name="actionKML"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_2"/>
+    <addaction name="action_caculatesevenpara"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_coordinatedirectsolution">
+   <property name="text">
+    <string>坐标正算
+</string>
+   </property>
+  </action>
+  <action name="action_coordinateinversionsolution">
+   <property name="text">
+    <string>坐标反算</string>
+   </property>
+  </action>
+  <action name="action_changezone">
+   <property name="text">
+    <string>换带计算</string>
+   </property>
+  </action>
+  <action name="action_caculatesevenpara">
+   <property name="text">
+    <string>七参数</string>
+   </property>
+  </action>
+  <action name="action_changeangle">
+   <property name="text">
+    <string>角度单位转换</string>
+   </property>
+  </action>
+  <action name="action_coordinatetokml">
+   <property name="text">
+    <string>大地坐标转换KML</string>
+   </property>
+  </action>
+  <action name="action_kmltocoordinate">
+   <property name="text">
+    <string>KML转坐标</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>投影基准</string>
+   </property>
+  </action>
+  <action name="actionKML">
+   <property name="text">
+    <string>KML提取大地坐标</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

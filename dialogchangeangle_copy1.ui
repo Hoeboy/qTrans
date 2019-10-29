@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>589</width>
+    <height>262</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_32">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>571</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>单点转换</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_46">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>551</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_62">
+     <item>
+      <widget class="QLabel" name="label_61">
+       <property name="text">
+        <string>源角度：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_AngleTran_Soruce_2"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_AngleTran_Point_2">
+       <property name="text">
+        <string>转换</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_62">
+       <property name="text">
+        <string>目标角度：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_AngleTran_Target_2">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_48">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>21</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_64">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_65">
+       <item>
+        <widget class="QLabel" name="label_63">
+         <property name="text">
+          <string>源角度单位：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_AngleTran_Source_2">
+         <item>
+          <property name="text">
+           <string>十进制度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>度分秒</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>弧度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>百分度</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_66">
+       <item>
+        <widget class="QLabel" name="label_64">
+         <property name="text">
+          <string>目标角度单位：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_AngleTran_Target_2">
+         <item>
+          <property name="text">
+           <string>度分秒</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>弧度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>百分度</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_33">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>571</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>文件转换</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_49">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>551</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_67">
+     <item>
+      <widget class="QLabel" name="label_69">
+       <property name="text">
+        <string>原始文件为逗号分隔符（csv）文件，数据排列顺序不限，请在选择文件时指定要转换的列。</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_50">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>551</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_68">
+     <item>
+      <widget class="QPushButton" name="pushButton_Another_AngleTran_SelectFile_3">
+       <property name="text">
+        <string>选择文件</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_AngleTran_FileName_3"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_51">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>21</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_69">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_70">
+       <item>
+        <widget class="QLabel" name="label_67">
+         <property name="text">
+          <string>源角度单位：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_AngleTran_Source_3">
+         <item>
+          <property name="text">
+           <string>十进制度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>度分秒</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>弧度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>百分度</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_71">
+       <item>
+        <widget class="QLabel" name="label_68">
+         <property name="text">
+          <string>目标角度单位：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_AngleTran_Target_3">
+         <item>
+          <property name="text">
+           <string>度分秒</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>弧度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>百分度</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AngleTran_File_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>转换</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

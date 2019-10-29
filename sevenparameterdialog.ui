@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SevenParameterDialog</class>
+ <widget class="QDialog" name="SevenParameterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>七参数计算</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>661</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>控制点文件</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>641</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_19">
+     <item>
+      <widget class="QPushButton" name="pushButton_Target_File">
+       <property name="text">
+        <string>打开文件</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_GCP_FilePath">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>lineEdit_GCP_FilePath</zorder>
+    <zorder>pushButton_Target_File</zorder>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>641</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>点名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>纬度</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>经度</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>大地高</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>北</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>东</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>高</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dX</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dY</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dZ</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>391</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>说明：坐标系统已知的情况下建议使用经典七参，一步法只适合小范围！</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>661</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>计算</string>
+   </property>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>坐标系统：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>51</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>计算方法：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>北偏移：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditt_FalseEast">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>中央子午线：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Project">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>国家2000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>北京54</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>西安80</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_FalseNorth">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_CaculateMethod">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>52</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string>经典七参</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>经典七参</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>一步法</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_MiddleLon">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>117</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>48</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>东偏移：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Caculate">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>计算参数</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_View">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看参数</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Cancel">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Enter">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
